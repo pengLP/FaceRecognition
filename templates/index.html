@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="icon" href="{{url_for('static',filename='images/favicon.png')}}">
+	<title>Dish - Cafe, Food and Restaurant Mobile Template</title>
+
+	<link href="https://cdn.bootcss.com/materialize/0.100.2/css/materialize.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="{{url_for('static',filename='css/loaders.css')}}">
+	<link rel="stylesheet" href="{{url_for('static',filename='css/lightbox.css')}}">
+	<link rel="stylesheet" href="{{url_for('static',filename='css/font-awesome.min.css')}}">
+	<link rel="stylesheet" href="{{url_for('static',filename='css/owl.carousel.min.css')}}">
+	<link rel="stylesheet" href="{{url_for('static',filename='css/owl.theme.default.min.css')}}">
+	<link rel="stylesheet" href="{{url_for('static',filename='css/style.css')}}">
+
+</head>
+<body>
+
+	<!-- navbar -->
+	<!--<div class="navbar">
+		<div class="container">
+			<div class="row">
+				<div class="col s3">
+					<div class="content-left">
+						<a href="#slide-out" data-activates="slide-out" class="sidebar"><i class="fas fa-bars"></i></a>
+					</div>
+				</div>
+				<div class="col s6">
+					<div class="content-center">
+						<a href="index.html"><h1>Dish</h1></a>
+					</div>
+				</div>
+				<div class="col s3">
+					<div class="content-right">
+						<div class="content-search">
+							<a href="#slide-out-right" data-activates="slide-out-right" class="sidebar-right-search">
+								<i class="fas fa-search"></i>
+							</a>
+						</div>
+						<div class="content-cart">
+							<a href="#slide-out-cart" data-activates="slide-out-cart" class="sidebar-right-cart">
+	                            <i class="fas fa-shopping-cart"><sup>3</sup></i>
+	                        </a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>-->
+	<!-- end navbar -->
+
+	<!-- sidebar left -->
+	<!--<div class="sidebar-panel">
+		<ul id="slide-out" class="collapsible side-nav">
+			<li class="list-top">
+                <div class="user-view">
+                    <div class="image">
+                    	<img src="{{url_for('static',filename='images/logo.png')}}" alt="">
+                    </div>
+                    <h3>Dish</h3>
+                    <span>Mobile Template</span>
+                </div>
+            </li>
+			<li><a href="index.html">Home</a></li>
+			<li>
+	         	<div class="collapsible-header">
+	         		Dish Page<span><i class="fas fa-angle-right right"></i></span>
+	         	</div>
+	            <div class="collapsible-body">
+	              <ul>
+	                <li><a href="product.html">Product</a></li>
+	                <li><a href="product-details.html">Product Details</a></li>
+	                 <li><a href="cart.html">Cart</a></li>
+	                <li><a href="checkout.html">Checkout</a></li>
+	                <li><a href="reservation.html">Reservation</a></li>
+	                 <li><a href="gallery.html">Gallery</a></li>
+	              </ul>
+	            </div>
+			</li>
+			<li>
+	         	<div class="collapsible-header">
+	         		Pages<span><i class="fas fa-angle-right right"></i></span>
+	         	</div>
+	            <div class="collapsible-body">
+	              <ul>
+	              	<li><a href="about.html">About</a></li>
+	                <li><a href="calendar.html">Calendar</a></li>
+	                <li><a href="pricing-table.html">Pricing Table</a></li>
+	                <li><a href="page-not-found.html">Page Not Found</a></li>
+	                 <li><a href="coming-soon.html">Coming soon</a></li>
+	                <li><a href="testimonial.html">Testimonial</a></li>
+	              </ul>
+	            </div>
+			</li>
+			<li>
+         	<div class="collapsible-header">
+         		Blog<span><i class="fas fa-angle-right right"></i></span>
+         	</div>
+            <div class="collapsible-body">
+              <ul>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="blog-single.html">Blog Single</a></li>
+              </ul>
+            </div>
+			</li>
+			<li><a href="contact.html">Contact us</a></li>
+			<li><a href="login.html">Login</a></li>
+			<li><a href="register.html">Register</a></li>
+			<li><a href="index.html">Log Out</a></li>
+		</ul>
+	</div>-->
+	<!-- end sidebar left -->
+
+	<!-- sidebar search -->
+	<!--<div class="sidebar-panel sidebar-search">
+		<ul id="slide-out-right" class="collapsible side-nav">
+			<li>
+				<div class="form">
+					<input type="search"><button class="button"><i class="fas fa-search"></i></button>
+				</div>
+				<div class="clear"></div>
+			</li>
+			<li><h5>Popular Search</h5></li>
+			<li><a href="">Juice</a></li>
+			<li><a href="">Coffea</a></li>
+			<li><a href="">Chicken</a></li>
+			<li><a href="">Fried</a></li>
+			<li><a href="">Stick</a></li>
+			<li><a href="">Food</a></li>
+			<li><a href="">Meat</a></li>
+		</ul>
+	</div>-->
+	<!-- end sidebar search -->
+
+	<!-- sidebar cart -->
+    <div class="sidebar-panel sidebar-cart">
+        <div id="slide-out-cart" class="collapsible side-nav">
+            <div class="content">
+                <div class="cart-img">
+                    <img src="{{url_for('static',filename='images/product3.jpg')}}" alt="">
+                </div>
+                <div class="cart-title">
+                    <a href="">Healty vegetables are full</a>
+                    <h5>$18</h5>
+                </div>
+                <div class="cart-remove">
+                    <a href=""><i class="fas fa-trash-alt"></i></a>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    </div>
+    <!-- end sidebar cart -->
+
+	<!-- product details -->
+	<div class="product-details segments-page">
+		<div class="container">
+			<div class="wrap-content">
+				<div class="product-d-slide owl-carousel owl-theme">
+					<div class="content">
+                        <video width="300" height="300" autoplay id="video"></video>
+                        <canvas style="display:none;" id="canvas" width="300" height="300"></canvas>
+					</div>
+				</div>
+				<div class="desc-short">
+					<h4>在线人脸识别系统</h4>
+					<button class="button" id="btn_snap"> 识别</button>
+				</div>
+			</div>
+			<div class="wrap-info">
+				<div class="row">
+					<div class="col s12">
+						<ul class="tabs">
+							<li class="tab col s3"><a class="active" href="#tabs1">识别结果</a></li>
+                            <li class="tab col s3"><a class="active" href="#tabs2">拍照记录</a></li>
+							<li class="tab col s3"><a href="#tabs3" class="active">打卡记录</a></li>
+						</ul>
+					</div>
+
+					<div id="tabs1" class="col s12">
+						<div class="content-tabs">
+							<div class="details">
+								<div class="wrap-title">
+									<h5>Description</h5>
+								</div>
+								<p id="res">识别结果：</p>
+							</div>
+						</div>
+					</div>
+
+                    <div id="tabs2" class="col s12">
+						<div class="content-tabs">
+                            <div class="comment-people" id="phoneList">
+                                <div class="content no-pt" >
+                                    <img src="" alt="">
+                                </div>
+                            </div>
+
+						</div>
+					</div>
+
+					<div id="tabs3" class="col s12">
+						<div class="content-tabs">
+							<div class="comment-people">
+								{% for i in data %}
+									<div class="content no-pt" >
+										<p>{{ i.name }}打卡   时间：{{i.time}}</p>
+									</div>
+								{% endfor %}
+                            </div>
+						</div>
+					</div>
+
+
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end product details -->
+
+	<script src="https://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+	<script src="https://cdn.bootcss.com/materialize/0.100.1/js/materialize.js"></script>
+	<script src="{{url_for('static',filename='js/owl.carousel.min.js')}}"></script>
+	<script src="{{url_for('static',filename='js/main.js')}}"></script>
+    <script>
+    var canvas = document.getElementById("canvas"),
+        pzBtn = document.getElementById("btn_snap"),
+        context = canvas.getContext("2d"),
+        video = document.getElementById("video");
+    alert('该页面会调用您的摄像头')
+    // 旧版本浏览器可能根本不支持mediaDevices，我们首先设置一个空对象
+    if (navigator.mediaDevices === undefined) {
+        navigator.mediaDevices = {};
+    }
+    // 一些浏览器实现了部分mediaDevices，我们不能只分配一个对象
+    // 使用getUserMedia，因为它会覆盖现有的属性。
+    // 这里，如果缺少getUserMedia属性，就添加它。
+    if (navigator.mediaDevices.getUserMedia === undefined) {
+        navigator.mediaDevices.getUserMedia = function (constraints) {
+            // 首先获取现存的getUserMedia(如果存在)
+            var getUserMedia = navigator.webkitGetUserMedia || navigator.mozGetUserMedia;
+            // 有些浏览器不支持，会返回错误信息
+            // 保持接口一致
+            if (!getUserMedia) {
+                return Promise.reject(new Error('getUserMedia is not implemented in this browser'));
+            }
+            //否则，使用Promise将调用包装到旧的navigator.getUserMedia
+            return new Promise(function (resolve, reject) {
+                getUserMedia.call(navigator, constraints, resolve, reject);
+            });
+        }
+    }
+    var constraints = { audio: false, video: {width: 720,height:720} }
+    navigator.mediaDevices.getUserMedia(constraints)
+        .then(function (stream) {
+            var video = document.querySelector('video');
+            // 旧的浏览器可能没有srcObject
+            if ("srcObject" in video) {
+                video.srcObject = stream;
+            } else {
+                //避免在新的浏览器中使用它，因为它正在被弃用。
+                video.src = window.URL.createObjectURL(stream);
+            }
+            video.onloadedmetadata = function (e) {
+                video.play();
+            };
+        })
+        .catch(function (err) {
+            console.log(err.name + ": " + err.message);
+        });
+
+
+
+    pzBtn.addEventListener("click", function () {
+        // 点击，canvas画图
+        context.drawImage(video, 0, 0, 500, 300);
+        // 获取图片base64链接
+        var image = canvas.toDataURL('image/png');
+        // 定义一个img
+        var img = new Image();
+        //设置属性和src
+        img.id = "imgBoxxx";
+        img.src = image;
+        //将图片添加到页面中
+        phoneList = document.getElementById("phoneList");
+        var item= "<div class=\"content no-pt\" >\n" +
+        "<img src='"+image+"' alt=\"\">\n" +
+        " </div>";
+        phoneList.innerHTML = item;
+
+
+        // base64转文件
+        function dataURLtoFile(dataurl, filename) {
+            var arr = dataurl.split(','), mime = arr[0].match(/:(.*?);/)[1],
+                bstr = atob(arr[1]), n = bstr.length, u8arr = new Uint8Array(n);
+            while (n--) {
+                u8arr[n] = bstr.charCodeAt(n);
+            }
+            return new File([u8arr], filename, {type: mime});
+        }
+        var formData = new FormData();
+        formData.append("file" , dataURLtoFile(image , 'aa.png'));
+        $.ajax({
+            type : "post",//向后台请求的方式，有post，get两种方法
+            url : "/upload",//url填写的是请求的路径
+            cache : false,//缓存是否打开
+            data : formData,
+            dataType : 'json',//请求的数据类型
+            processData: false,//用于对data参数进行序列化处理 这里必须false
+            contentType: false, //必须*!/
+            success : function(data) {//请求的返回成功的方法
+                var res = "识别结果：" + data.name + "\n       打卡时间"+ data.time;
+				alert(res);
+				document.getElementById("res").innerHTML  = res
+            },
+            error : function(XMLHttpRequest, textStatus, errorThrown) {//请求的失败的返回的方法
+                alert(XMLHttpRequest.toString() + " , " + textStatus + " , " + errorThrown);
+            }
+        });
+
+        console.log(dataURLtoFile(image, 'aa.png'));
+    });
+
+    $(function () {
+        $("#uploadFile").change(function () {
+            var formData = new FormData();
+            var file = document.getElementById("uploadFile").files[0];
+            formData.append("file" , file);
+            $.ajax({
+                type : "post",//向后台请求的方式，有post，get两种方法
+                url : "/upload",//url填写的是请求的路径
+                cache : false,//缓存是否打开
+                data : formData,
+                dataType : 'json',//请求的数据类型
+                processData: false,//用于对data参数进行序列化处理 这里必须false
+                contentType: false, //必须*/
+                success : function(data) {//请求的返回成功的方法
+                	var res = "识别结果：" + data.name + "\n 打卡时间"+ data.time;
+                	alert(res);
+                    document.getElementById("res").innerHTML  = res
+                },
+                error : function(XMLHttpRequest, textStatus, errorThrown) {//请求的失败的返回的方法
+                    alert(XMLHttpRequest.toString() + " , " + textStatus + " , " + errorThrown);
+                }
+            });
+        })
+    })
+</script>
+
+</body>
+</html>
