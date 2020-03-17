@@ -72,5 +72,11 @@ def upload():
     # res = "识别结果：" + contrast_table[str(name_number)]
     return json.dumps(res, ensure_ascii=False)
 
+@app.route('/table')
+def table():
+    df = pd.read_csv('log.csv')
+    res = df.to_dict(orient='records')
+    return render_template("table.html" , data=res)
+
 if __name__ == '__main__':
     app.run(host="0.0.0.0", port=8080)

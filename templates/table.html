@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!--引入css-->
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.15/css/jquery.dataTables.min.css">
+
+    <!--引入JavaScript-->
+    <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.10.15/js/jquery.dataTables.min.js"></script>
+</head>
+<body>
+    <h1 style="text-align: center;">签到统计表</h1>
+    <hr />
+    <div style="width: 80%;margin: 0 auto;margin-top: 20px;">
+        <table id="example" class="display" style="width:100%;text-align: center;">
+        <thead>
+            <tr>
+            <th>id</th>
+            <th>姓名</th>
+            <th>签到时间</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for i in data %}
+                <tr>
+                    <td>{{ i.id }}</td>
+                    <td>{{ i.name }}</td>
+                    <td>{{ i.time }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+        <tfoot>
+            <tr>
+            <th>id</th>
+            <th>姓名</th>
+            <th>签到时间</th>
+            </tr>
+        </tfoot>
+    </table>
+    </div>
+
+<script>
+    $(document).ready(function() {
+        $('#example').DataTable();
+    } );
+</script>
+</body>
+</html>
