@@ -1,2 +1,2 @@
 # FaceRecognition
-基于CNN神经网络的人脸识别分类系统，使用opencv对人脸进行识别，flask搭载了web服务器
+基于CNN神经网络的实时人脸识别分类系统，使用opencv对人脸进行识别，flask搭载了web服务器
